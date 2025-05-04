@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trivia of the Day</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="app-header">
+            <h1>Trivia of the Day</h1>
+            <div class="counter" id="counter">Question 1 of 10</div>
+        </div>
+
+        <div class="card">
+            <div class="riddle-container">
+                <p class="riddle-text" id="riddle">Loading your trivia questions...</p>
+            </div>
+            
+            <div class="answer-container hidden" id="answer-container">
+                <div class="answer-header">Correct Answer:</div>
+                <p class="answer-text" id="answer"></p>
+            </div>
+            
+            <div class="button-container">
+                <button class="btn" id="show-answer">
+                    <span class="btn-icon">💡</span>
+                    <span class="btn-text">Show Answer</span>
+                </button>
+                <button class="btn btn-next" id="next-riddle">
+                    <span class="btn-text">Next Question</span>
+                    <span class="btn-icon">→</span>
+                </button>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <p>Questions powered by Open Trivia Database</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
